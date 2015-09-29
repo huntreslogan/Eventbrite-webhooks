@@ -45,12 +45,6 @@ def index():
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    """
-        Webhooks simply provide API endpoints that the user can use to gather
-        more information. They are sent as HTTP POSTS with the JSON mimetype
-        specified in the header.
-
-    """
 
     # Use the API client to convert from a webhook to an API object. An API
     #   object is just a Python dict with some extra methods.

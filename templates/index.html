@@ -20,7 +20,7 @@
             updater = function(user){
                 var msg = '<tr><td>'+user.name +'</td>';
                 {% if attendees.attendees and attendees.attendees[0]['answers'] is not none %}
-                    {% for answer in attendee['answers'] %}
+                    {% for answer in attendees['answers'] %}
                         msg = msg + '<td></td>';
                     {% endfor %}
                 {% endif %}
